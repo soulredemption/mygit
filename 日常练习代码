@@ -1,0 +1,41 @@
+import random
+a = random.randint(0,100)
+i = 0
+for i in range(0,3):
+    b = int(input('caishu'))
+    if b != a:
+        if b > a:
+            print('大了')
+        if b < a:
+            print('小了')
+        i+=1
+    else:
+        print('才对')
+        break
+else:
+    print('猜错')
+    
+i = 0
+while True:
+    a = input('A，你认罪吗？请回答认罪或者不认')
+    b = input('B，你认罪吗？请回答认罪或者不认')
+    if a == '认罪' and b == '认罪':
+        print('两人都得判10年，唉')
+    elif a == '不认' and b == '认罪':
+        print('A判20年，B判1年，唉')
+    elif a == '认罪' and b == '不认':
+        print('A判1年，B判20年')
+    else:
+        print('都判3年，太棒了')
+        i + = 1
+        break  # 当满足开头提到的条件时，跳出循环。
+print(i)
+
+movie = {'1':['a','b'], '2':['c','d'], '3':['e','f']}
+p = input('')
+for i in movie:
+    if p in movie[i]:
+        print(p+'出演了'+i)
+        break
+else:
+    print('meizhaod')
