@@ -39,3 +39,33 @@ for i in movie:
         break
 else:
     print('meizhaod')
+    
+怪物PK游戏
+import random
+import time
+a1 = random.randint(100,150)
+a2 = random.randint(100,150)
+b1 = random.randint(30,50)
+b2 = random.randint(30,50)
+player = [a1, b1]
+computer = [a2, b2]
+print('—————现在是第 1 局————')
+print('【玩家】')
+print('血量:'+str(a1))
+print('攻击:'+str(b1))
+time.sleep(2)
+print('''_____________________
+【敌人】''')
+print('血量:'+str(a2))
+print('攻击:'+str(b2))
+time.sleep(2)
+while True
+while True:
+    print('______________________')
+    time.sleep(2)
+    a2 = a2 - b1
+    a1 = a1 - b2
+    print('你发起了攻击，敌人剩余血量'+str(a2))
+    print('敌人发起攻击，你剩余血量'+str(a1))
+    if a2 <= 0 or a1 <=0:
+        break
