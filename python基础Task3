@@ -1,0 +1,62 @@
+Task3（2day）
+1. Dict字典
+1） 定义
+字典是一种常用的数据结构，用于存放具有映射关系的数据。字典相当于保存了两组数据
+其中一组数据是关键数据：key：；另一组通过key来访问，称为value。其中key不能重复。
+2） 创建
+scores = {'语文': 89, '数学': 92, '英语': 93}
+3） 字典的方法
+访问：print(scores[‘添加‘])
+添加：scores[92] =93
+删除：del scores[‘语文’]
+改变：scores[‘语文‘] = 59
+判断是否有key：print(‘key‘ in scores) 输出True and False
+Clear()方法，清空。Scores.clear()
+Get()，根据key获取value，访问不存在的可以会返回none。
+Scores.update([‘’])更新字典。
+Scores.pop(key)提取出来并从字典中删除
+2. 集合
+1） 特性
+集合set是一个无序不重复的元素序列
+2） 创建
+parame = {value01,value02,...}
+或者
+set(value)
+创建一个空集合必须用 set()可以使用大括号 { } 或者 set() 函数创建集合
+3） 方法
+添加：s.add(x)
+移出：s.remove(x)但元素不存在会发生错误
+移出：s.discard(x)元素不存在不会错误
+add()	为集合添加元素
+clear()	移除集合中的所有元素
+copy()	拷贝一个集合
+difference()	返回多个集合的差集
+difference_update()	移除集合中的元素，该元素在指定的集合也存在。
+discard()	删除集合中指定的元素
+intersection()	返回集合的交集
+intersection_update()	删除集合中的元素，该元素在指定的集合中不存在。
+isdisjoint()	判断两个集合是否包含相同的元素，如果没有返回 True，否则返回 False。
+issubset()	判断指定集合是否为该方法参数集合的子集。
+issuperset()	判断该方法的参数集合是否为指定集合的子集
+pop()	随机移除元素
+remove()	移除指定元素
+symmetric_difference()	返回两个集合中不重复的元素集合。
+symmetric_difference_update()	移除当前集合中在另外一个指定集合相同的元素，并将另外一个指定集合中不同的元素插入到当前集合中。
+union()	返回两个集合的并集
+update()	给集合添加元素
+3. 判断语句（要求掌握多条件判断）
+Python 条件语句是通过一条或多条语句的执行结果（True 或者 False）来决定执行的代码块。If 语句的表达式，如果满足条件则执行下面的句式。可以嵌套，学过就不多说了。
+4. 三目表达式
+可通过 if 语句来实现三目运算符的功能，因此可以近似地把这种if语句当成三目运算符。作为三目运算符的 if 语句的语法格式如下：
+True_statements if expression else False_statements
+三目运算符的规则是：先对逻辑表达式 expression 求值，如果逻辑表达式返回 True，则执行并返回 True_statements 的值；如果逻辑表达式返回 False，则执行并返回 False_statements 的值。
+Print（‘XXXXX‘）if a > b else print（’XX‘）
+允许再三目运算符的true 和false中防止多条语句。
+1.	多条语句以英文逗号隔开：每条语句都会执行，程序返回多条语句的返回值组成的元组。
+2多条语句以英文分号隔开：每条语句都会执行，程序只返回第一条语句的返回值。
+循环语句
+while 循环在每次执行循环体之前，都要先对 test_expression 循环条件求值，如果循环条件为真，则运行循环体部分。从上面的语法格式来看，迭代语句 iteration_statements 总是位于循环体的最后，因此只有当循环体能成功执行完成时，while 循环才会执行迭代语句 iteration_statements。
+从这个意义上看，while 循环也可被当成分支语句使用，即如果 test_expression 条件一开始就为假，则循环体部分将永远不会获得执行的机会
+for-in 循环专门用于遍历范围、列表、元素和字典等可迭代对象包含的元素。
+for-in 循环的语法格式如下：
+for 循环一般用于次数确定的，while一般用于次数不确定的。
