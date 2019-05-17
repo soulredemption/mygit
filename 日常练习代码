@@ -47,7 +47,17 @@ a1 = random.randint(100,150)
 a2 = random.randint(100,150)
 b1 = random.randint(30,50)
 b2 = random.randint(30,50)
-player = [a1, b1]
+A = [91, 95, 97, 99]
+B = [92, 93, 96, 98]
+pingjun_A = sum(A)/len(B)
+pingjun_B = sum(B)/len(B)
+for i in A:
+    if i < pingjun_A:
+        list = []
+        list.append(i)
+        continue
+print(list)
+print(pingjun_A)player = [a1, b1]
 computer = [a2, b2]
 print('—————现在是第 1 局————')
 print('【玩家】')
@@ -84,3 +94,53 @@ for i in range(1,10):
     for j in range(1,i+1):
         print('%s X %s = %s' % (i, j, i*j),end = ' ')
     print('')
+合并列表和列表排序。    
+A = [91, 95, 97, 99]
+B = [92, 93, 96, 98]
+list = A + B
+i = 0
+for i in range(0,7):
+    for j in range(0,7-i):
+        if list[j] > list[j+1]:
+            a = list[j]
+            list[j] = list[j+1]
+            list[j+1] = a
+print(list)
+算平均成绩并打印低于平均成绩的分数
+A = [91, 95, 97, 99]
+B = [92, 93, 96, 98]
+pingjun_A = sum(A)/len(B)
+pingjun_B = sum(B)/len(B)
+for i in A:
+    if i < pingjun_A:
+        list = []
+        list.append(i)
+        continue
+print(list)
+print(pingjun_A)
+选出两个数中较大的数
+def max(a, b):
+  return a if a > b else b
+print(max(2, 8888))
+中奖器
+import random
+import time
+# 将抽奖程序封装成
+def choujiang(q,w,e):  # 定义一个抽奖函数，带有3个参数，也就是3位候选人
+    luckylist = [q,w,e]  # 定义一个中奖名单的列表
+    a = random.choice(luckylist)  # 在中奖名单里面随机选择
+    print('开奖倒计时',3)
+    time.sleep(1)
+    print('开奖倒计时',2)
+    time.sleep(1)
+    print('开奖倒计时',1)
+    time.sleep(1)
+    image = '''
+    /\_)o<
+    |      \\
+    | O . O|
+    \_____/
+    '''
+    print(image)
+    print('恭喜'+a+'中奖！')
+choujiang('虚竹','萧峰','段誉')  # 调用函数
