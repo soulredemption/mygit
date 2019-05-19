@@ -1,0 +1,14 @@
+Task5（2day）
+1.	类和对象
+在面向对象的程序设计过程中有两个重要概念：类（class）和对象（object，也被称为实例，instance），其中类是某一批对象的抽象，可以把类理解成某种概念；对象才是一个具体存在的实体。从这个意义上看，日常所说的人，其实都是人的对象，而不是人类。
+对于在类体中定义的实例方法，Python 会自动绑定方法的第一个参数（通常建议将该参数命名为 self），第一个参数总是指向调用该方法的对象。根据第一个参数出现位置的不同，第一个参数所绑定的对象略有区别：
+在构造方法中引用该构造方法正在初始化的对象。
+在普通实例方法中引用调用该方法的对象
+https://www.runoob.com/python/python-object.html
+2.	正则表达式
+https://www.runoob.com/python/python-reg-expressions.html
+3.	re模块
+http://c.biancheng.net/view/2427.html
+4.	http请求
+https://blog.csdn.net/weixin_42734407/article/details/81162026
+基本都是看了笔记。
