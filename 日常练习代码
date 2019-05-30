@@ -175,3 +175,31 @@ class hrSystem:
             print('youxiuyuangong')
         else:
             print('meiyoujiang')
+猫抓老鼠的练习。类与对象
+class Animal():
+    def __init__(self,name ='动物'):
+        self.name = name
+        self.attack = 100
+class Cat(Animal):
+    def __init__(self,name = '猫'):
+        Animal.__init__(self,name)
+    def fight_buff(self,opponent):
+        if opponent.name == '老鼠':
+            self.attack = int(self.attack*1.5)
+class Rat(Animal):
+    def __init__(self,name = '老鼠'):
+        Animal.__init__(self,name)
+class Monkey(Animal):
+    def __init__(self,name = '猴子'):
+        Animal.__init__(self,name)
+
+Tom = Cat()
+Jerry = Rat()
+Bobo = Monkey()
+
+print(Tom.attack)
+
+Tom.fight_buff(Jerry)
+print(Tom.attack)
+
+啊
